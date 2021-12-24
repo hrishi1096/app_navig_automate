@@ -4,7 +4,7 @@ name: CI for App automate (Python)
 
 on:
   push:
-    branches: [ develop ]
+    branches: [ develop_2 ]
   pull_request:
     branches: [ main ]
 
@@ -23,15 +23,15 @@ jobs:
         with:
           python-version: 3.9
 
-      - name: 'BrowserStack Env Setup'
-        uses: 'browserstack/github-actions/setup-env@master'
+      - name: BrowserStack Env Setup
+        uses: browserstack/github-actions/setup-env@master
         with:
           username:  ${{ secrets.BROWSERSTACK_USERNAME }}
           access-key: ${{ secrets.BROWSERSTACK_ACCESS_KEY }}
           build-name: 'BUILD_INFO'
           project-name: 'REPO_NAME'
 
-      - name: Test code
+      - name: Run the test
         run: |
           python -m pip install --upgrade pip
           python -m pip install -r requirements.txt

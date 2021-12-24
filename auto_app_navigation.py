@@ -13,13 +13,12 @@ EXPLICIT_WAIT_TIME = 30
 USERNAME = os.environ['BROWSERSTACK_USERNAME']
 ACCESSKEY = os.environ['BROWSERSTACK_ACCESS_KEY']
 BUILD_NAME = os.environ['BROWSERSTACK_BUILD_NAME']
-APPID = os.environ["BROWSERSTACK_APP_ID"]
 DELAY = 3
 
 
 capabilities = [
     {
-    "app" : APPID,
+    "app" : "bs://9b23dc46d2250bd7abb1318451e6aea6a7e452ba",
     "device" : "Samsung Galaxy S21 Ultra",
     "os_version" : "11.0",
     "real_mobile" : "true",
@@ -37,7 +36,7 @@ capabilities = [
     "browserstack.console" : "verbose"
     },
     {
-    "app" : APPID,
+    "app" : "bs://9b23dc46d2250bd7abb1318451e6aea6a7e452ba",
     "device" : "Google Pixel 5",
     "os_version" : "11.0",
     "real_mobile" : "true",
@@ -55,7 +54,7 @@ capabilities = [
     "browserstack.console" : "verbose"
     },
     {
-    "app" : APPID,
+    "app" : "bs://9b23dc46d2250bd7abb1318451e6aea6a7e452ba",
     "device" : "OnePlus 9",
     "os_version" : "11.0",
     "real_mobile" : "true",
@@ -73,7 +72,7 @@ capabilities = [
     "browserstack.console" : "verbose"
     },
     {
-    "app" : APPID,
+    "app" : "bs://9b23dc46d2250bd7abb1318451e6aea6a7e452ba",
     "device" : "Samsung Galaxy Tab S7",
     "os_version" : "10.0",
     "real_mobile" : "true",
@@ -91,7 +90,7 @@ capabilities = [
     "browserstack.console" : "verbose"
     },
     {
-    "app" : APPID,
+    "app" : "bs://9b23dc46d2250bd7abb1318451e6aea6a7e452ba",
     "device" : "Samsung Galaxy Tab S7",
     "os_version" : "10.0",
     "real_mobile" : "true",
