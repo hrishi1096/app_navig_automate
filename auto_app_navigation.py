@@ -12,6 +12,7 @@ IMPLICIT_WAIT_TIME = 10
 EXPLICIT_WAIT_TIME = 30
 USERNAME = os.environ['BROWSERSTACK_USERNAME']
 ACCESSKEY = os.environ['BROWSERSTACK_ACCESS_KEY']
+BUILD = os.environ['BROWSERSTACK_BUILD_NAME']
 DELAY = 3
 
 
@@ -24,19 +25,33 @@ capabilities = [
     "browserstack.networkLogs": "true",
     "browserstack.debug": "true",
     "project" : "App Automate assignment",
-    "build" : "app_automate_navigation_test_parallel",
-    "name" : "Galaxy S21 ultra"
+    "build" : "BUILD",
+    "name" : "Galaxy S21 ultra",
+    "browserstack.appium_version" : "1.20.2",
+    "browserstack.networkLogs" : "true",
+    "browserstack.timezone" : "India",
+    "browserstack.networkProfile" : "3.5g-hspa-plus-lossy",
+    "deviceOrientation" : "landscape",
+    # "browserstack.geoLocation": "IN",
+    "browserstack.console" : "verbose"
     },
     {
     "app" : "bs://9b23dc46d2250bd7abb1318451e6aea6a7e452ba",
-    "device" : "Motorola Moto G9 Play",
-    "os_version" : "10.0",
+    "device" : "Google Pixel 5",
+    "os_version" : "11.0",
     "real_mobile" : "true",
     "browserstack.networkLogs": "true",
     "browserstack.debug": "true",
     "project" : "App Automate assignment",
-    "build" : "app_automate_navigation_test_parallel",
-    "name" : "Moto G9 play"
+    "build" : "BUILD",
+    "name" : "Pixel 5",
+    "browserstack.appium_version" : "1.20.2",
+    "browserstack.networkLogs" : "true",
+    "browserstack.timezone" : "India",
+    "browserstack.networkProfile" : "3.5g-hspa-plus-lossy",
+    "deviceOrientation" : "landscape",
+    # "browserstack.geoLocation": "IN",
+    "browserstack.console" : "verbose"
     },
     {
     "app" : "bs://9b23dc46d2250bd7abb1318451e6aea6a7e452ba",
@@ -46,8 +61,15 @@ capabilities = [
     "browserstack.networkLogs": "true",
     "browserstack.debug": "true",
     "project" : "App Automate assignment",
-    "build" : "app_automate_navigation_test_parallel",
-    "name" : "Oneplus 9"
+    "build" : "BUILD",
+    "name" : "Oneplus 9",
+    "browserstack.appium_version" : "1.20.2",
+    "browserstack.networkLogs" : "true",
+    "browserstack.timezone" : "India",
+    "browserstack.networkProfile" : "3.5g-hspa-plus-lossy",
+    "deviceOrientation" : "landscape",
+    # "browserstack.geoLocation": "IN",
+    "browserstack.console" : "verbose"
     },
     {
     "app" : "bs://9b23dc46d2250bd7abb1318451e6aea6a7e452ba",
@@ -57,19 +79,33 @@ capabilities = [
     "browserstack.networkLogs": "true",
     "browserstack.debug": "true",
     "project" : "App Automate assignment",
-    "build" : "app_automate_navigation_test_parallel",
-    "name" : "Galaxy tab S7"
+    "build" : "BUILD",
+    "name" : "Galaxy tab S7",
+    "browserstack.appium_version" : "1.20.2",
+    "browserstack.networkLogs" : "true",
+    "browserstack.timezone" : "India",
+    "browserstack.networkProfile" : "3.5g-hspa-plus-lossy",
+    "deviceOrientation" : "landscape",
+    # "browserstack.geoLocation": "IN",
+    "browserstack.console" : "verbose"
     },
     {
     "app" : "bs://9b23dc46d2250bd7abb1318451e6aea6a7e452ba",
-    "device" : "Xiaomi Redmi Note 9",
+    "device" : "Samsung Galaxy Tab S7",
     "os_version" : "10.0",
     "real_mobile" : "true",
     "browserstack.networkLogs": "true",
     "browserstack.debug": "true",
     "project" : "App Automate assignment",
-    "build" : "app_automate_navigation_test_parallel",
-    "name" : "Redmi note 9"
+    "build" : "BUILD",
+    "name" : "Galaxy Tab S7",
+    "browserstack.appium_version" : "1.20.2",
+    "browserstack.networkLogs" : "true",
+    "browserstack.timezone" : "India",
+    "browserstack.networkProfile" : "3.5g-hspa-plus-lossy",
+    "deviceOrientation" : "landscape",
+    # "browserstack.geoLocation": "IN",
+    "browserstack.console" : "verbose"
     }
 ]
 
