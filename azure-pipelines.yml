@@ -1,0 +1,21 @@
+# Starter pipeline
+
+trigger:
+- develop
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- task: BrowserStackConfig@0
+  inputs:
+    BrowserStackServiceEndPoint: 'Browserstack Connection HB'
+- task: BrowserStackAppUploader@0
+  inputs:
+    appPath: '/Users/hrishib/Downloads/android_ios_apps/image-to-pdf.apk'
+
+- script: |
+    python3 -m pip install -r requirements.txt
+    python3 -m pytest -n 5 auto_app_navigation.py
+  displayName: 'Run the app navigation script'
+
