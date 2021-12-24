@@ -19,8 +19,10 @@ pipeline {
                 url: 'git@github.com:hrishi1096/app_navig_automate.git'
 
                 browserstack('hrishib_browserstack_credentials') {
-                    sh '''python3 -m pip install -r requirements.txt
-                          python3 -m pytest -n 5 auto_app_navigate.py'''
+                    browserstackAppUploader('/Users/hrishib/Downloads/android_ios_apps/image-to-pdf.apk') {
+                        sh '''python3 -m pip install -r requirements.txt
+                              python3 -m pytest -n 5 auto_app_navigation.py'''
+                    }
                 }
             }
         }
